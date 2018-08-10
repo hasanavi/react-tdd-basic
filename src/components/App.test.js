@@ -10,7 +10,7 @@ describe("App", () => {
 	});
 
 	it("initializes the `state` with an empty list of gifts", () => {
-		expect(app.state().gifts).toEqual([]);
+		expect(app.state("gifts")).toEqual([]);
 	});
 
 	describe("when clicking the `add gift` button", () => {
@@ -19,7 +19,7 @@ describe("App", () => {
 		});
 
 		it("adds a new gifts to `state`", () => {
-			expect(app.state().gifts).toEqual([{ id: 1 }]);
+			expect(app.state("gifts")).toEqual([{ id: 1 }]);
 		});
 
 		it("adds a new gift to the rendered list", () => {

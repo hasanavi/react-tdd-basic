@@ -23,7 +23,7 @@ describe("Gift", () => {
 		});
 
 		it("updates the person in `state`", () => {
-			expect(gift.state().person).toEqual(person);
+			expect(gift.state("person")).toEqual(person);
 		});
 	});
 
@@ -37,7 +37,7 @@ describe("Gift", () => {
 		});
 
 		it("updates the present in `state`", () => {
-			expect(gift.state().present).toEqual(present);
+			expect(gift.state("present")).toEqual(present);
 		});
 	});
 });
