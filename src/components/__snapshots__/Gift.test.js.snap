@@ -4,11 +4,7 @@ exports[`Gift renders property 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Gift
-    gift={
-        Object {
-            "id": 1,
-          }
-    }
+    id={1}
     removeGift={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -75,6 +71,7 @@ ShallowWrapper {
           Remvoe Gift
 </Button>,
       ],
+      "className": "gift",
     },
     "ref": null,
     "rendered": Array [
@@ -312,6 +309,7 @@ ShallowWrapper {
             Remvoe Gift
 </Button>,
         ],
+        "className": "gift",
       },
       "ref": null,
       "rendered": Array [

@@ -41,7 +41,7 @@ class App extends Component {
 						return (
 							<Gift
 								key={gift.id}
-								gift={gift}
+								id={gift.id}
 								removeGift={this.removeGift}
 							/>
 						);

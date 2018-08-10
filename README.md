@@ -1,6 +1,8 @@
 # react-test-driven-development
 Best practices for TDD for React JS development
 
+notes: react structure / styles could be better but this project is mostly focused on developing functionalities in best possible Test driven way
+
 
 ## Changelog
 
