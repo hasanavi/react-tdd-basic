@@ -14,12 +14,14 @@ describe("App", () => {
 	});
 
 	describe("when clicking the `add gift` button", () => {
+		const id = 1;
+
 		beforeEach(() => {
 			app.find(".btn-add").simulate("click");
 		});
 
 		it("adds a new gifts to `state`", () => {
-			expect(app.state("gifts")).toEqual([{ id: 1 }]);
+			expect(app.state("gifts")).toEqual([{ id }]);
 		});
 
 		it("adds a new gift to the rendered list", () => {
@@ -32,6 +34,16 @@ describe("App", () => {
 
 		afterEach(() => {
 			app.setState({ gifts: [] });
+		});
+
+		describe("and the user wants to remove the added gift", () => {
+			beforeEach(() => {
+				app.instance().removeGift(id);
+			});
+
+			it("removes the gift from `state`", () => {
+				expect(app.state("gifts")).toEqual([]);
+			});
 		});
 	});
 });
